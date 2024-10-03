@@ -1,0 +1,25 @@
+body
+{
+    background-color: whitesmoke;
+}
+
+.container-global
+{
+    margin-left: 0.3%;
+    margin-right: 0.3%;
+}
+
+/* topo da página */
+.topo-pagina
+{
+    margin: 5px;
+    border: 2px black solid;
+    border-radius: 25px;
+    background-color: rgb(60, 60, 199);
+}
+
+.icon
+{
+    margin-left: 2%;
+    margin-top: 1%;
+}
