@@ -1,6 +1,6 @@
 body
 {
-    background-color: whitesmoke;
+    background-color: rgb(245, 245, 245);
 }
 
 .container-global
@@ -15,11 +15,68 @@ body
     margin: 5px;
     border: 2px black solid;
     border-radius: 25px;
-    background-color: rgb(60, 60, 199);
+    background-color: rgb(62, 62, 255);
+    /* background-color: rgb(62, 123, 255);
+    background-image: url(../img/sonic-forces.jpg);
+    background-size: cover;
+    background-position: center; */
+    display: flex;
 }
 
 .icon
 {
     margin-left: 2%;
+    margin-top: 2.5%;
+    float: left;
+}
+
+.topo-titulo
+{
+    margin: 0% auto;
+}
+
+.sonic-topo
+{
+    float: right;
+    margin-right: 2%;
     margin-top: 1%;
+}
+
+/* conteudo da página */
+.sobre
+{
+    position: relative;
+    border: 2px black solid;
+}
+  
+.sobre-conteudo
+{
+    color: black;
+    font-size: x-large;
+    padding: 20px;
+    text-align: center;
+}
+  
+.sobre-backgroundimg
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/greenhill.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3; /* Opacidade apenas da imagem */
+    z-index: -1; /* Indica a posição da imagem */
+}
+
+.welcome
+{
+    color: red;
+}
+
+.txt-conteudo
+{
+    background-color: aqua;
 }
