@@ -9,17 +9,16 @@ body
     margin-right: 0.3%;
 }
 
+
+
+
 /* topo da página */
 .topo-pagina
 {
     margin: 5px;
     border: 2px black solid;
-    border-radius: 25px;
+    border-radius: 10px;
     background-color: rgb(62, 62, 255);
-    /* background-color: rgb(62, 123, 255);
-    background-image: url(../img/sonic-forces.jpg);
-    background-size: cover;
-    background-position: center; */
     display: flex;
 }
 
@@ -42,11 +41,15 @@ body
     margin-top: 1%;
 }
 
+
+
+
 /* conteudo da página */
 .sobre
 {
     position: relative;
     border: 2px black solid;
+    border-radius: 10px;
 }
   
 .sobre-conteudo
@@ -73,10 +76,129 @@ body
 
 .welcome
 {
-    color: red;
+    color: whitesmoke;
+    background-color: black;
+    border: 4px whitesmoke solid;
+    border-radius: 35px;
+    margin-left: 36%;
+    margin-right: 36%;
+    padding-top: 1%;
+    padding-bottom: 0.9%;
+    font-family: NiseSegaSonic;
 }
 
 .txt-conteudo
 {
-    background-color: aqua;
+    border: 2px black solid;
+    border-radius: 30px;
+    font-size: xx-large;
+    background-color: rgba(196, 191, 191, 0.829);
+}
+
+
+
+
+
+/* fotos no conteudo */
+
+.sonicforcesimg
+{
+    border: 3px red solid;
+}
+
+.sonic-charactersimg
+{
+    border: 3px black solid;
+}
+
+
+
+
+/* botão de cadastro */
+
+.botao-cadastro
+{
+    border: 3px whitesmoke solid;
+    border-radius: 25px;
+    background-color: black;
+    color: whitesmoke;
+    font-size: xx-large;
+    font-family: NiseSegaSonic;
+} 
+
+.cadastrar
+{
+    margin-left: 32;
+    margin-right: 32;
+}
+
+.cadastrar :hover
+{
+    background-color: rgb(187, 7, 7);
+    color: black;
+}
+
+.botao-cadastro :visited
+{
+    color: whitesmoke;
+}
+
+.cadastrar h3
+{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+
+/* Rodapé página */
+
+.rodape
+{
+    height: 300px;
+    width: 0% auto;
+    background-color: rgb(62, 62, 255);
+    border: 2px black solid;
+    border-radius: 10px;
+    margin-top: 0.5%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.rodape-container
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: medium;
+    margin-left: 8%;
+}
+
+.map p
+{
+    color: whitesmoke;
+}
+
+.titulo-rodapé
+{
+    float: left;
+}
+
+.silver-rodape
+{
+    float: right;
+    margin-top: 3%;
+    margin-right: 10%;
+    margin-left: auto;
+}
+
+
+
+
+
+/* Fontes personalizadas */
+@font-face {
+    font-family: 'NiseSegaSonic';
+    src: url('../fonts/NiseSegaSonic.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
