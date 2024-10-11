@@ -11,7 +11,7 @@
 <body>
     <div>
         <div class="topo-pagina">
-            <div class="icon"><a href="index.php"><img src="img/icon_sonic.png" href="index.php" alt="Icon Sonic" width="200px" height="170px"></a></div>
+            <div class="icon"><a href="index.php"><img src="img/icon_sonic.png" alt="Icon Sonic" width="200px" height="170px"></a></div>
             <div class="topo-titulo"><img src="img/titulo_sonic_game.png" alt="titulo jogo" width="270px" height="270px"></div>
             <div class="sonic-topo"><a href="https://youtu.be/hT1rup7O_us?si=uhe2Q6WIBbBAuhUF"><img src="img/sonictopo.png" alt="sonic png" width="230px" height="230px"></a></div>
         </div>

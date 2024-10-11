@@ -9,14 +9,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilo-cadastro.css">
-    <title>Cadastre-se e jogue!</title>
+    <title>Cadastro</title>
 </head>
 <body>
     <div>
         <div class="topo-pagina">
-            <div class="icon"><a href="index.php"><img src="img/icon_sonic.png" href="index.php" alt="Icon Sonic" width="200px" height="170px"></a></div>
+            <div class="icon"><a href="index.php"><img src="img/icon_sonic.png" alt="Icon Sonic" width="200px" height="170px"></a></div>
             <div class="topo-titulo"><img src="img/titulo_sonic_game.png" alt="titulo jogo" width="270px" height="270px"></div>
-            <div class="eggman-topo"><a href="https://youtu.be/hT1rup7O_us?si=uhe2Q6WIBbBAuhUF"><img src="img/sonictopo.png" alt="sonic png" width="230px" height="230px"></a></div>
+            <div class="eggman-topo"><a href="https://youtu.be/q46emsU3JH4?si=f46nWeEX4XavXkEy"><img src="img/eggman-topo.png" alt="eggman png" width="300px" height="250px"></a></div>
         </div>
         <div class="topobackgroundimg"></div>
     </div>
@@ -24,38 +24,69 @@
     <div class="container-global">
         <div class="sobre">
             <div class="sobre-conteudo">
-                <h1 class="welcome">Sobre o jogo!</h1>
+                <h1 class="welcome">Cadastre-se e jogue!</h1>
                 <div class="txt-conteudo">
                     <text>
                         <br>
-                        Sonic the Hedgehog: Black Arms Strike é uma nova e emocionante fangame do universo Sonic!
                         <br>
-                        Embarque em uma épica aventura para salvar Mobius da invasão alienígena dos Black Arms.
+                        Para baixar a fangame é necessário se cadastrar e preencher um pequeno formulário.  
                         <br>
-                        <br>
-                        Mergulhe em uma narrativa divertida e intrigante onde Sonic e seus amigos tentam impedir o ataque dos Black Arms enquanto tentam acabar mais uma vez com os planos malignos do Dr.Eggman.
-                        <br>
-                        Planeje cada movimento com cuidado e explore as fraquezas dos seus inimigos.
+                        Seus dados serão utilizados para <s>vender curso</s> entrarmos em contato e pedirmos seu feedback :D
                         <br>
                         <br>
-                        <img class="sonicforcesimg" src="img/sonic-forces.jpg" alt="">
+                        Após terminar de preencher o formulário clique no botão "ENVIAR FORMULARIO", e você
+                        <br>
+                        será redirecionado para a página de download!
                         <br>
                         <br>
-                        Uma nova aventura épica com personagens originais e das histórias em quadrinhos.
-                        <br>
-                        Jogue com seus personagens favoritos e descubra novas habilidades e poderes.
-                        <br>
-                        <br>
-                        <img class="sonic-charactersimg" src="img/sonic_characters.jpg" alt="" width="1100px" height="840px">
-                        <br>
-                        <br>
-                        Prepare-se para a batalha!
-                        <br>
-                        Junte-se à luta e salve Mobius!
-                        <br>
-                        <br>
-                        <div class="cadastrar"><a href="cadastro.php"><button class="botao-cadastro"><h3>Cadastre-se agora!</h3></button></a></div>
-                        <br>
+                        <div class="formulario">
+                            <div class="formulario-background">
+                                <form method="post" action="">
+                                    <br>
+                                    <text class="formularioPreencha">Preencha o formulario</text>
+                                    <br>
+                                    <br>
+                                    <label for="nome">Nome/Nickname</label>
+                                    <br>
+                                    <input type="text" placeholder="Digite seu nome" id="nome" name="nome" required>
+                                    <br>
+                                    <br>
+                                    <label for="idade">Idade</label>
+                                    <br>
+                                    <input type="number" placeholder="Digite sua idade" id="idade" name="idade" required>
+                                    <br>
+                                    <br>
+                                    <label for="genero">Gênero</label>
+                                    <br>
+                                    <select name="genero" id="genero" required>
+                                        <option value="">Selecione</option>
+                                        <option value="masculino">Masculino</option>
+                                        <option value="feminino">Feminino</option>
+                                        <option value="outros">Outros</option>
+                                        <option value="nãodizer">Prefiro não dizer</option>
+                                    </select>
+                                    <br>
+                                    <br>
+                                    <label for="nascimento">Data de Nascimento</label>
+                                    <br>
+                                    <input type="date" name="nascimento" id="nascimento" required>
+                                    <br>
+                                    <br>
+                                    <label for="genero">Email</label>
+                                    <br>
+                                    <input type="email" placeholder="Digite seu email" name="email" id="email" required>
+                                    <br>
+                                    <br>
+                                    <label for="telefone">Telefone</label>
+                                    <br>
+                                    <input type="tel" placeholder="(00)00000-0000" maxlength="14" name="telefone" id="telefone" required>
+                                    <br>
+                                    <br>
+                                    <div class="cadastrar"><input href="pagina-download.php" type="submit" value="ENVIAR FORMULARIO"></div>
+                                    <br>
+                                </form>
+                            </div>
+                        </div>
                         <br>
                     </text>
                 </div>
@@ -71,7 +102,7 @@
             <div class="titulo-rodapé"><img src="img/titulo_sonic_game.png" alt="" width="300px" height="265px"></div>
             <p>&copy; Todos os direitos reservados</p>
         </main>
-        <div class="silver-rodape"><a href="https://youtu.be/_UDVzVmk1NQ?si=ZniBCGP22kTI7CJl"><img src="img/silver-rodape.png" alt="" height="250px" width="300px"></a></div>
+        <div class="shadow-rodape"><a href="https://youtube.com/shorts/qPFsmAWf2nc?si=uVQnLlDxtclnDZOC"><img src="img/shadow-rodape.png" alt="" height="250px" width="300px"></a></div>
     </div>
 </footer>
 

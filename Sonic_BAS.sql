@@ -1,0 +1,3 @@
+CREATE DATABASE Sonic_BAS;
+
+CREATE TABLE formulario;

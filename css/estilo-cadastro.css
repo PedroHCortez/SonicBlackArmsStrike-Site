@@ -37,7 +37,7 @@ body
 .eggman-topo
 {
     float: right;
-    margin-right: 2%;
+    margin-right: 3%;
     margin-top: 1%;
 }
 
@@ -48,7 +48,7 @@ body
 .sobre
 {
     position: relative;
-    border: 2px black solid;
+    border: 2px whitesmoke solid;
     border-radius: 10px;
 }
   
@@ -67,7 +67,7 @@ body
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../img/greenhill.jpg);
+    background-image: url(../img/cadastro-background.jpg);
     background-size: cover;
     background-position: center;
     opacity: 0.3; /* Opacidade apenas da imagem */
@@ -80,8 +80,8 @@ body
     background-color: black;
     border: 4px whitesmoke solid;
     border-radius: 35px;
-    margin-left: 36%;
-    margin-right: 36%;
+    margin-left: 32%;
+    margin-right: 32%;
     padding-top: 1%;
     padding-bottom: 0.9%;
     font-family: NiseSegaSonic;
@@ -89,7 +89,7 @@ body
 
 .txt-conteudo
 {
-    border: 2px black solid;
+    border: 2px whitesmoke solid;
     border-radius: 30px;
     font-size: xx-large;
     background-color: rgba(196, 191, 191, 0.829);
@@ -99,33 +99,46 @@ body
 
 
 
-/* fotos no conteudo */
-
-.sonicforcesimg
+/* formulario */
+.formulario
 {
-    border: 3px red solid;
+    color: black;
+    border: 5px black solid;
+    border-radius: 120px;
+    background-color: rgb(123, 3, 3);
+    margin-left: 260px;
+    margin-right: 260px;
 }
 
-.sonic-charactersimg
+.formulario-background
 {
-    border: 3px black solid;
+    border: 5px black solid;
+    border-radius: 120px;
+    background-color: whitesmoke;
+    margin: 60px;
+}
+
+.formularioPreencha
+{
+    color: whitesmoke;
+    background-color: black;
+    border-radius: 35px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 1%;
+    padding-bottom: 0.9%;
+    font-family: NiseSegaSonic;
+}   
+
+.formulario input, select
+{
+    font-size: x-large;
 }
 
 
 
 
 /* botão de cadastro */
-
-.botao-cadastro
-{
-    border: 3px whitesmoke solid;
-    border-radius: 25px;
-    background-color: black;
-    color: whitesmoke;
-    font-size: xx-large;
-    font-family: NiseSegaSonic;
-} 
-
 .cadastrar
 {
     margin-left: 32;
@@ -149,6 +162,16 @@ body
     margin-right: 40px;
 }
 
+.cadastrar input
+{
+    color: whitesmoke;
+    background-color: black;
+    border: 3px whitesmoke solid;
+    border-radius: 25px;
+    padding: 21px;
+    font-size: xx-large;
+    font-family: NiseSegaSonic;
+}
 
 /* Rodapé página */
 
@@ -156,8 +179,8 @@ body
 {
     height: 300px;
     width: 0% auto;
-    background-color: rgb(62, 62, 255);
-    border: 2px black solid;
+    background-color: rgb(123, 3, 3);
+    border: 2px whitesmoke solid;
     border-radius: 10px;
     margin-top: 0.5%;
     margin-left: 5px;
@@ -183,7 +206,7 @@ body
     float: left;
 }
 
-.silver-rodape
+.shadow-rodape
 {
     float: right;
     margin-top: 3%;
