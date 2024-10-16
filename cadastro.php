@@ -1,5 +1,23 @@
 <?php
 
+// Receba os dados do formulário
+$nome = $_POST['nome'];
+$email = $_POST['email'];
+
+// Prepare e execute a consulta SQL
+$sql = "INSERT INTO sua_tabela (nome, email) VALUES ('$nome', '$email')";
+
+if ($conn->query($sql) === TRUE) {
+    echo "Novos registros adicionados com sucesso";
+} else {
+    echo "Erro ao adicionar registros: " . $conn->error;
+}
+
+// Redirecione o usuário
+header("Location: pagina_de_sucesso.php");
+exit();
+
+$conn->close();
 
 ?>
 
@@ -82,7 +100,7 @@
                                     <input type="tel" placeholder="(00)00000-0000" maxlength="14" name="telefone" id="telefone" required>
                                     <br>
                                     <br>
-                                    <div class="cadastrar"><input href="pagina-download.php" type="submit" value="ENVIAR FORMULARIO"></div>
+                                    <div class="cadastrar"><input type="submit" value="ENVIAR FORMULARIO"></div>
                                     <br>
                                 </form>
                             </div>
