@@ -1,0 +1,185 @@
+body
+{
+    background-color: rgb(245, 245, 245);
+}
+
+.container-global
+{
+    margin-left: 0.3%;
+    margin-right: 0.3%;
+}
+
+
+
+
+/* topo da página */
+.topo-pagina
+{
+    margin: 5px;
+    border: 2px black solid;
+    border-radius: 10px;
+    background-color: rgb(62, 62, 255);
+    display: flex;
+}
+
+.icon
+{
+    margin-left: 2%;
+    margin-top: 2.5%;
+    float: left;
+}
+
+.topo-titulo
+{
+    margin: 0% auto;
+}
+
+.knuckles-topo
+{
+    float: right;
+    margin-right: 3%;
+    margin-top: 2%;
+}
+
+
+
+
+/* conteudo da página */
+.sobre
+{
+    position: relative;
+    border: 2px black solid;
+    border-radius: 10px;
+}
+  
+.sobre-conteudo
+{
+    color: black;
+    font-size: x-large;
+    padding: 20px;
+    text-align: center;
+}
+  
+.sobre-backgroundimg
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/greenhill.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3; /* Opacidade apenas da imagem */
+    z-index: -1; /* Indica a posição da imagem */
+}
+
+.welcome
+{
+    color: whitesmoke;
+    background-color: black;
+    border: 4px whitesmoke solid;
+    border-radius: 35px;
+    margin-left: 36%;
+    margin-right: 36%;
+    padding-top: 1%;
+    padding-bottom: 0.9%;
+    font-family: NiseSegaSonic;
+}
+
+.txt-conteudo
+{
+    font-size: xx-large;
+}
+
+
+
+
+/* botão de download */
+
+.botao-download
+{
+    border: 3px black solid;
+    border-radius: 25px;
+    background-color: rgb(50, 163, 255);
+    color: black;
+    font-size: xx-large;
+    font-family: NiseSegaSonic;
+} 
+
+.baixar
+{
+    margin-left: 32;
+    margin-right: 32;
+}
+
+.baixar :hover
+{
+    background-color: rgb(8, 202, 121);
+    color: whitesmoke;
+}
+
+.botao-download :visited
+{
+    color: whitesmoke;
+}
+
+.baixar h3
+{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+
+/* Rodapé página */
+
+.rodape
+{
+    height: 300px;
+    width: 0% auto;
+    background-color: rgb(62, 62, 255);
+    border: 2px black solid;
+    border-radius: 10px;
+    margin-top: 0.5%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.rodape-container
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: medium;
+    margin-left: 8%;
+}
+
+.map p
+{
+    color: whitesmoke;
+}
+
+.titulo-rodapé
+{
+    float: left;
+}
+
+.tails-rodape
+{
+    float: right;
+    margin-top: 3%;
+    margin-right: 10%;
+    margin-left: auto;
+}
+
+
+
+
+
+/* Fontes personalizadas */
+@font-face {
+    font-family: 'NiseSegaSonic';
+    src: url('../fonts/NiseSegaSonic.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

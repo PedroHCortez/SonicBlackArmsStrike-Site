@@ -1,23 +1,32 @@
 <?php
 
-// Receba os dados do formulário
-$nome = $_POST['nome'];
-$email = $_POST['email'];
+// Conecta ao banco de dados
+include('conectadb.php');
 
-// Prepare e execute a consulta SQL
-$sql = "INSERT INTO sua_tabela (nome, email) VALUES ('$nome', '$email')";
+// Verifica se o método da requisição é POST
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    
+    // Recebe os dados do formulário
+    $nome = $_POST['nome'];
+    $idade = $_POST['idade'];
+    $genero = $_POST['genero'];
+    $nascimento = $_POST['nascimento'];
+    $email = $_POST['email'];
+    $telefone = $_POST['telefone'];
 
-if ($conn->query($sql) === TRUE) {
-    echo "Novos registros adicionados com sucesso";
-} else {
-    echo "Erro ao adicionar registros: " . $conn->error;
+    // Insere os dados no banco de dados
+    $sql = "INSERT INTO tb_formulario (form_nome, form_idade, form_genero, form_datanascimento, form_email, form_telefone)
+    VALUES ('$nome', '$idade', '$genero', '$nascimento', '$email', '$telefone')";
+
+    // Executa a query
+    if (mysqli_query($link, $sql))
+    {
+        // Redireciona para a página de download após o envio do formulario
+        header('Location: pagina-download.php');
+        exit;
+    }
+
 }
-
-// Redirecione o usuário
-header("Location: pagina_de_sucesso.php");
-exit();
-
-$conn->close();
 
 ?>
 
@@ -77,7 +86,6 @@ $conn->close();
                                     <label for="genero">Gênero</label>
                                     <br>
                                     <select name="genero" id="genero" required>
-                                        <option value="">Selecione</option>
                                         <option value="masculino">Masculino</option>
                                         <option value="feminino">Feminino</option>
                                         <option value="outros">Outros</option>
@@ -113,6 +121,8 @@ $conn->close();
          </div>
     </div>
 </body>
+
+<script src="script/script.js"></script>
 
 <footer class="rodape">
     <div class="rodape-container">
